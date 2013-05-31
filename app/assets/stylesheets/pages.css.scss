@@ -1,0 +1,10 @@
+html 							{  font-family: sans-serif; }
+ul 								{  overflow: auto; @include box-sizing(border-box); background-color: #222; list-style: none; @include border-radius; padding: 0; margin: 0; }
+li 								{  border: 5px solid #222222; @include border-radius; text-align: center;  @include box-sizing(border-box); float: left; width: (100% / 6); display: inline-block; position: relative; @include border-radius; height: 75px; padding: 13px; @include background-image(radial-gradient(50% 0, rgba(255,255,255,0) 0, rgba(255,255,255,0.2) 50%)); color:	$yellow; background-color: $blue; @include box-shadow(rgba(#fff, 0.1) 10px 10px 10px inset); }
+li:after						{ content: ""; position:	absolute; width: 90%; height: 55% ; top: 0; left: 5%; @include border-radius(.5em .5em 1em 1em / .5em .5em 2em 2em); @include background-image(linear-gradient(top, $blue, white)); @include opacity(0.1); }
+.answers li 					{  color: $yellow; font-size: 46px; font-weight: bold;
+	&>div 						{  @include text-shadow(rgba(black, 0.5) 3px 3px 0px); }
+}
+.categories 					{  border-bottom: 10px solid #222;
+	li 							{  color: #fff; text-transform: uppercase; font-weight: bold; @include text-shadow(rgba(black, 0.5) 2px 2px 0px);  }
+}
